@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="store">
+  <head>
+    <title>meetup</title>
+    <link rel="stylesheet" type="text/css" href="/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <h1>Hello World</h1><br />
+    {{843 / 42 }}
+    <div ng-controller="MainController">
+      <h1>{{message}}</h1>
+      <div>
+        <div>person first: {{person.firstName}}</div>
+        <div>person last: {{person.lastName}}</div>
+      </div>
+      <br />
+      <div>
+        <form name="searchUser">
+          <input type="search" placeholder="username to find" ng-model="username">
+          <input type="submit" value="search" ng-click="search(username)">
+        </form>
+        {{username}}
+      </div>
+    </div>
+    <script type="text/javascript" src="/angular-1.3.9/angular.min.js"></script>
+    <script src="/js/meetup.js"></script>
+  </body>
+</html>
